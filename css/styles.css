@@ -34,7 +34,7 @@ header {
       flex-direction: row;
   }*/
 }
-header div h1 {
+header div div h1 {
   font-size: 2.2rem;
   margin: 5px 0px 5px 20px;
   font-weight: 500;
@@ -112,17 +112,17 @@ header .fixingLogo div {
 
 .h1 {
   font-size: 3.1rem;
-  margin-top: 0px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: -50px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
 }
 
 h2 {
   font-size: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
 }
 
 main {
-  margin-top: 80px;
+  margin-top: 100px;
   max-width: 100vw;
 }
 main div {
@@ -252,6 +252,12 @@ p {
   padding: 3px;
 }
 
+@media only screen and (max-width: 400px) {
+  .propertiesUl ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .presupuesto {
   display: flex;
   flex-direction: column;
@@ -298,7 +304,7 @@ p {
 }
 
 /*Sección de mapas mobile*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1250px) {
   #maps {
     max-width: 100vw;
     overflow: scroll;
@@ -314,12 +320,30 @@ p {
     border-radius: 5px;
   }
   #maps .mapPlusLink .divMaps iframe {
+    width: 40vw;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #maps .mapPlusLink .divMaps iframe {
     width: 95vw;
     height: 350px;
   }
 }
 #btnBackToTop {
   display: none;
+}
+
+/*making the logo by hand*/
+.ar-s {
+  font-size: 3.3rem;
+  color: #0a497b;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+}
+
+.gentina-alud {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
 }
 
 footer {
@@ -418,10 +442,10 @@ footer {
   header .fixingLogo img {
     margin: 7px;
   }
-  header .fixingLogo div {
-    margin-top: 40px;
+  header .fixingLogo div div {
+    margin-top: 35px;
   }
-  header .fixingLogo div h1 {
+  header .fixingLogo div div h1 {
     font-size: 3.3rem;
   }
   header .fixingLogo div h2 {
