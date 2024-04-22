@@ -1,0 +1,200 @@
+main{
+    margin-top: 80px;
+    max-width: 100vw;
+    div{
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        h5{
+            font-size: 2rem;
+            margin: 7px 3px 3px 5px;
+            font-weight: 400;
+        }
+    }
+    #btnBackToTop {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 20px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 2rem;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    
+}
+section{
+    .listaMateriales{
+        margin: 15px 30px;
+        li{
+            font-size: 2rem;
+        }
+    }
+}
+
+
+/*.catalogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $background-header;
+    border-radius: 5px;
+    width: 100%;
+    h4{
+        font-size: 2.5rem;
+        margin: auto;
+    }
+    table{
+        margin: auto;
+        thead{
+            th{
+                font-size: 1.7rem;
+                padding: 3px 5px;
+            }
+        }
+        tbody{
+            td{
+                font-size: 1.7rem;
+                padding: 3px 5px;
+            }
+        }
+    }
+}*/
+
+    .muestraTrabajo{
+        margin: 10px 5px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+#inicio{
+    margin-top: 50px;
+}
+.introduccion{
+    font-size: 1.8rem;
+    text-align: justify;
+    margin: 4px 10px;
+    padding: 5px;
+    background-color: $background-header;
+    border-radius: 5px;
+    /*background-image: url('../assets/img/backgroundPVC3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+}
+.antesDespues{
+    margin: 50px auto 15px auto;
+    font-size: 2rem;
+}
+.welcome{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 2rem;
+    margin: 7px;
+}
+p{
+    font-size: 2rem;
+    margin: 7px;
+}
+.hDivisor{
+    border-top: 1px solid $background-footer;
+    top: 50%;
+    margin: 20px 60px 20px 60px;
+}
+.propertiesUl{
+    background-color: $background-header;
+    /*background-image: url('../assets/img/backgroundPVC3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        font-size: 1.9rem;
+        list-style-type: none;
+        li{
+            margin: auto;
+            padding: 3px;
+        }
+    }
+}
+.presupuesto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    /*background-image: url('../assets/img/backgroundPVC2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    p{
+        a{
+            color: #000000;
+        &:visited{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        }
+    }
+}
+#ig{
+    color: #dd2a7b;
+}
+#wsp{
+    color: #43d854;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+} 
+
+.muestraTrabajo{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+/*Sección de mapas mobile*/
+@media only screen and (max-width: 768px){
+    #maps{
+        max-width: 100vw;
+        overflow :scroll;
+        display: flex;
+        flex-direction: column;
+        .mapPlusLink{
+        display: flex;
+        flex-direction: column;
+        .divMaps{
+            border: 1px solid $goldenArg;
+            border-radius: 5px;
+            iframe{
+                width: 95vw;
+                height: 350px;
+            }
+        }
+        }
+    }
+}
+#btnBackToTop{
+    display: none;
+}

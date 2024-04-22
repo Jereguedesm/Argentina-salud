@@ -1,0 +1,562 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+html body {
+  max-width: 100vw;
+  height: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  max-width: 100vw;
+  height: 100px;
+  background-color: #6CACE4;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  z-index: 2;
+  border-bottom: 2px solid #ffffff;
+  /*.fixingLogo{
+      display: flex;
+      flex-direction: row;
+  }*/
+}
+header div h1 {
+  font-size: 2.2rem;
+  margin: 5px 0px 5px 20px;
+  font-weight: 500;
+}
+header div h2 {
+  font-size: 1.5rem;
+  margin: 5px 0px 5px 20px;
+  font-weight: 500;
+}
+header div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+header div ul li {
+  font-size: 1.2rem;
+  list-style-type: none;
+  margin: 40px auto;
+  transition: transform 0.2s ease-out;
+  padding: 3px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header div ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 3px;
+  font-size: 1.2rem;
+}
+header div a .logoWspMaps {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  display: none;
+}
+header .fixingLogo {
+  display: flex;
+  flex-direction: row;
+}
+header .fixingLogo img {
+  margin: 7px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  height: 100px;
+}
+header .fixingLogo div {
+  margin-top: 30px;
+}
+
+.nsli {
+  text-decoration-line: underline;
+  text-decoration-color: #804000;
+  text-decoration-thickness: 2px;
+}
+
+.ulHeader {
+  display: flex;
+  flex-direction: row;
+}
+.ulHeader li a {
+  font-size: 2.4rem;
+}
+
+.selected {
+  text-decoration-color: #7D4016;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px solid;
+}
+
+.logoHeader {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.h1 {
+  font-size: 3.1rem;
+  margin-top: 0px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  margin-top: 80px;
+  max-width: 100vw;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+main div h5 {
+  font-size: 2rem;
+  margin: 7px 3px 3px 5px;
+  font-weight: 400;
+}
+main #btnBackToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+main #btnBackToTop:hover {
+  transform: scale(1.05);
+}
+
+section .listaMateriales {
+  margin: 15px 30px;
+}
+section .listaMateriales li {
+  font-size: 2rem;
+}
+
+/*.catalogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $background-header;
+    border-radius: 5px;
+    width: 100%;
+    h4{
+        font-size: 2.5rem;
+        margin: auto;
+    }
+    table{
+        margin: auto;
+        thead{
+            th{
+                font-size: 1.7rem;
+                padding: 3px 5px;
+            }
+        }
+        tbody{
+            td{
+                font-size: 1.7rem;
+                padding: 3px 5px;
+            }
+        }
+    }
+}*/
+.muestraTrabajo {
+  margin: 10px 5px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+#inicio {
+  margin-top: 50px;
+}
+
+.introduccion {
+  font-size: 1.8rem;
+  text-align: justify;
+  margin: 4px 10px;
+  padding: 5px;
+  background-color: #6CACE4;
+  border-radius: 5px;
+  /*background-image: url('../assets/img/backgroundPVC3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+.antesDespues {
+  margin: 50px auto 15px auto;
+  font-size: 2rem;
+}
+
+.welcome {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 7px;
+}
+
+p {
+  font-size: 2rem;
+  margin: 7px;
+}
+
+.hDivisor {
+  border-top: 1px solid #6CACE4;
+  top: 50%;
+  margin: 20px 60px 20px 60px;
+}
+
+.propertiesUl {
+  background-color: #6CACE4;
+  /*background-image: url('../assets/img/backgroundPVC3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;*/
+}
+.propertiesUl ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.9rem;
+  list-style-type: none;
+}
+.propertiesUl ul li {
+  margin: auto;
+  padding: 3px;
+}
+
+.presupuesto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  /*background-image: url('../assets/img/backgroundPVC2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;*/
+}
+.presupuesto p a {
+  color: #000000;
+}
+.presupuesto p a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#ig {
+  color: #dd2a7b;
+}
+
+#wsp {
+  color: #43d854;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.muestraTrabajo {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+/*Sección de mapas mobile*/
+@media only screen and (max-width: 768px) {
+  #maps {
+    max-width: 100vw;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+  #maps .mapPlusLink {
+    display: flex;
+    flex-direction: column;
+  }
+  #maps .mapPlusLink .divMaps {
+    border: 1px solid #efb810;
+    border-radius: 5px;
+  }
+  #maps .mapPlusLink .divMaps iframe {
+    width: 95vw;
+    height: 350px;
+  }
+}
+#btnBackToTop {
+  display: none;
+}
+
+footer {
+  background-color: #6CACE4;
+  margin-top: 5px;
+}
+
+.redes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.redes-container ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.redes-container ul li a {
+  display: block;
+  padding: 10px 10px;
+  color: #ffffff;
+  line-height: 60px;
+  width: 60px;
+  font-size: 3rem;
+  border-radius: 5px;
+}
+.redes-container ul li a:visited {
+  color: #ffffff;
+}
+.redes-container ul li a img {
+  width: 30px;
+}
+
+.instagram {
+  background: #dd2a7b;
+}
+
+.youtube {
+  background: #ff0000;
+}
+
+.facebook {
+  background: #3b5999;
+}
+
+.whatsapp {
+  background: #43d854;
+}
+
+.author {
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin: 10px;
+}
+.author p {
+  text-align: center;
+}
+
+.ul-redes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "facebook youtube fa-instagram fa-whatsapp";
+  padding: 0;
+}
+
+.personal {
+  padding: 3px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.personal:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+  }
+  header .fixingLogo {
+    display: flex;
+    flex-direction: row;
+  }
+  header .fixingLogo .logoHeader {
+    height: 135px;
+    width: 135px;
+  }
+  header .fixingLogo img {
+    margin: 7px;
+  }
+  header .fixingLogo div {
+    margin-top: 40px;
+  }
+  header .fixingLogo div h1 {
+    font-size: 3.3rem;
+  }
+  header .fixingLogo div h2 {
+    font-size: 1.8rem;
+  }
+  header .divHeaderOptions ul {
+    display: flex;
+    flex-direction: row;
+  }
+  header .divHeaderOptions ul li {
+    font-size: 2.2rem;
+  }
+  header .divHeaderOptions ul li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+  }
+  main {
+    margin-top: 130px;
+  }
+  main section div {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    max-width: 100vw;
+  }
+  main section div h4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 20px auto;
+  }
+  main section div img {
+    max-width: 35vw;
+    margin: auto;
+  }
+  .redes-container ul li a {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    background: #333;
+    border-radius: 0;
+  }
+  .redes-container ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 0 #ffffff 0, 0, 0, 0.4;
+  }
+  .redes-container ul li .instagram:hover {
+    background: #dd2a7b;
+  }
+  .redes-container ul li .youtube:hover {
+    background: #ff0000;
+  }
+  .redes-container ul li .facebook:hover {
+    background: #3b5999;
+  }
+  .redes-container ul li .whatsapp:hover {
+    background: #43d854;
+  }
+  .catalogo {
+    width: 30%;
+    margin: 0 35% 0 35%;
+  }
+  .calculadoraPresupuestos {
+    width: 20%;
+    font-size: 4rem;
+  }
+  .calculadoraPresupuestos:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  .nsli:hover {
+    cursor: pointer;
+  }
+  .introduccion {
+    font-size: 1.9rem;
+    width: 60%;
+    margin: 15px auto;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #6CACE4;
+  }
+  .antesDespues {
+    font-size: 3rem;
+    margin: 15px 15px 45px 15px;
+    justify-self: center;
+  }
+  #confirmarCompra:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .propertiesUl ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(11, 1fr);
+  }
+  .hDivisor {
+    width: 50vw;
+    margin: 60px auto;
+  }
+  .justMobile {
+    display: none;
+  }
+  #btnBackToTop {
+    display: none;
+  }
+}
+.maps {
+  display: flex;
+  flex-direction: row;
+}
+.maps .mapPlusLink {
+  display: flex;
+  flex-direction: column;
+}
+.maps .mapPlusLink .divMaps {
+  border: 2px solid #6CACE4;
+  display: flex;
+  flex-direction: column;
+}
+.maps .mapPlusLink .divMaps:hover {
+  border: 2px solid #efb810;
+}
+.maps .mapPlusLink .divMaps iframe {
+  border-radius: 7px;
+}
+.maps .mapPlusLink div a {
+  color: #43d854;
+  margin: auto;
+}
+.maps .mapPlusLink div a .logoWspMaps {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+.maps .mapPlusLink div a .logoWspMaps:hover {
+  transform: scale(1.03);
+}
