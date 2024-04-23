@@ -1,6 +1,8 @@
 footer{
     background-color: $background-footer;
     margin-top: 5px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .redes-container{
     display: flex;
@@ -55,10 +57,10 @@ footer{
 }
 .ul-redes{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "facebook youtube fa-instagram fa-whatsapp";
+    "facebook  fa-instagram fa-whatsapp";
     padding: 0;
 }
 .personal{
