@@ -59,10 +59,11 @@ header{
         .fixingLogo{
             display: flex;
             flex-direction: row;
+            align-self: center;
             img{
                 margin: 7px;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-                height: 100px;
+                height: 135px;
             }
             div{
                 margin-top: 30px;
@@ -91,9 +92,9 @@ header{
 }
 
 .logoHeader{
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
