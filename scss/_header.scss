@@ -9,10 +9,6 @@ header{
     height: fit-content;
     z-index: 2;
     border-bottom: 2px solid #ffffff;
-        /*.fixingLogo{
-        display: flex;
-        flex-direction: row;
-    }*/
         div{
             div{
                 h1{
@@ -70,11 +66,7 @@ header{
             }
         }
 }
-.nsli {
-    text-decoration-line: underline;
-    text-decoration-color: #804000;
-    text-decoration-thickness: 2px;
-}  
+
 .ulHeader{
     display: flex;
     flex-direction: row;
@@ -85,7 +77,6 @@ header{
     }
 }
 .selected{
-    //text-decoration: underline 2px solid $underline-header;
     text-decoration-color: $underline-header;
     text-decoration-line: underline;
     text-decoration-thickness: 2px solid;

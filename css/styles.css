@@ -29,10 +29,6 @@ header {
   height: fit-content;
   z-index: 2;
   border-bottom: 2px solid #ffffff;
-  /*.fixingLogo{
-      display: flex;
-      flex-direction: row;
-  }*/
 }
 header div div h1 {
   font-size: 2.2rem;
@@ -85,12 +81,6 @@ header .fixingLogo div {
   margin-top: 30px;
 }
 
-.nsli {
-  text-decoration-line: underline;
-  text-decoration-color: #804000;
-  text-decoration-thickness: 2px;
-}
-
 .ulHeader {
   display: flex;
   flex-direction: row;
@@ -126,12 +116,6 @@ h2 {
 main {
   margin-top: 120px;
   max-width: 100vw;
-  /*.welcome{
-      text-align: justify;
-      width: 80%;
-      margin: auto;
-      font-size: 1.7rem;
-  }*/
 }
 main div {
   display: flex;
@@ -164,21 +148,6 @@ main .photos-display div img {
   height: auto;
 }
 
-section .listaMateriales {
-  margin: 15px 30px;
-}
-section .listaMateriales li {
-  font-size: 2rem;
-}
-
-.muestraTrabajo {
-  margin: 10px 5px;
-  border-radius: 5px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-
 #inicio {
   margin-top: 50px;
 }
@@ -190,18 +159,6 @@ section .listaMateriales li {
   padding: 5px;
   background-color: #6CACE4;
   border-radius: 5px;
-  /*background-image: url('../assets/img/backgroundPVC3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;*/
-}
-
-.antesDespues {
-  margin: 50px auto 15px auto;
-  font-size: 2rem;
-}
-
-.welcome {
-  font-size: 2rem;
 }
 
 h3 {
@@ -251,21 +208,6 @@ p {
     flex-direction: column;
   }
 }
-.presupuesto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-content: center;
-  text-align: center;
-}
-.presupuesto p a {
-  color: #000000;
-}
-.presupuesto p a:visited {
-  text-decoration: none;
-  color: #ffffff;
-}
-
 #ig {
   color: #dd2a7b;
 }
@@ -463,8 +405,6 @@ footer {
     flex-direction: row;
   }
   header .fixingLogo .logoHeader {
-    /*height: 135px;
-    width: 135px;*/
     height: 135px;
     width: auto;
     border-radius: 10px;
