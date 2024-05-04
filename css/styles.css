@@ -313,6 +313,36 @@ p {
   color: #ffffff;
 }
 
+.sabemosAmamosHacemos {
+  font-size: 2.3rem;
+  text-align: center;
+  border-radius: 5px;
+  padding: 3px;
+  text-decoration: underline 2px solid #efb810;
+}
+
+.sabemosAmamosHacemos2 {
+  font-size: 2.3rem;
+  text-align: center;
+  border: solid 1px #000000;
+  border-radius: 25px;
+  padding: 3px;
+}
+
+.sabemosAmamosHacemos3 {
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 3px;
+}
+
+.sabemosAmamosHacemos4 {
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 3px;
+  background-color: #6CACE4;
+  border-radius: 5px;
+}
+
 footer {
   background-color: #6CACE4;
   margin-top: 5px;
@@ -480,6 +510,54 @@ footer {
   }
   main .photos-display div img:hover {
     border: 2px solid #efb810;
+  }
+  main .photos-display-2 {
+    display: flex;
+    flex-direction: row;
+  }
+  main .photos-display-2 div img {
+    width: 400px;
+    height: 420px;
+    border: 2px solid #6CACE4;
+  }
+  main .photos-display-2 div img:hover {
+    border: 2px solid #efb810;
+  }
+  main .sabemosAmamosHacemos {
+    font-size: 3rem;
+    margin-top: 40px;
+    padding: 7px;
+    text-decoration: underline 2px solid #6CACE4;
+    /*border: solid 1px #000000;
+    border-radius: 25px;
+    &:hover{
+        background-color: $goldenArg;
+    }*/
+  }
+  main .sabemosAmamosHacemos:hover {
+    text-decoration: underline 2px #efb810;
+  }
+  main .sabemosAmamosHacemos2 {
+    font-size: 3rem;
+    margin-top: 40px;
+    padding: 7px;
+    border: solid 1px #000000;
+    border-radius: 25px;
+  }
+  main .sabemosAmamosHacemos2:hover {
+    background-color: #efb810;
+  }
+  main .sabemosAmamosHacemos3 {
+    font-size: 3rem;
+    margin-top: 40px;
+    padding: 7px;
+  }
+  main .sabemosAmamosHacemos4 {
+    font-size: 3rem;
+    margin-top: 40px;
+    padding: 7px;
+    background-color: #6CACE4;
+    border-radius: 5px;
   }
   .redes-container ul li a {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);

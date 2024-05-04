@@ -95,6 +95,57 @@
                 }
             }
         }
+        .photos-display-2{
+            display: flex;
+            flex-direction: row;
+            div{
+                img{
+                    width: 400px;
+                    height: 420px;
+                    border: 2px solid $background-header;
+                    &:hover{
+                        border: 2px solid $goldenArg;
+                    }
+                }
+            }
+        }
+        .sabemosAmamosHacemos{
+            font-size: 3rem;
+            margin-top: 40px;
+            padding: 7px;
+            text-decoration: underline 2px solid $background-header;
+            &:hover{
+                
+                text-decoration:underline 2px $goldenArg;
+            }
+            /*border: solid 1px #000000;
+            border-radius: 25px;
+            &:hover{
+                background-color: $goldenArg;
+            }*/
+        }
+        .sabemosAmamosHacemos2{
+            font-size: 3rem;
+            margin-top: 40px;
+            padding: 7px;
+            border: solid 1px #000000;
+            border-radius: 25px;
+            &:hover{
+                background-color: $goldenArg;
+            }
+        }
+        .sabemosAmamosHacemos3{
+            font-size: 3rem;
+            margin-top: 40px;
+            padding: 7px;
+        }
+        .sabemosAmamosHacemos4{
+            font-size: 3rem;
+            margin-top: 40px;
+            padding: 7px;
+            background-color: $background-header;
+            border-radius: 5px;
+        }
     }
     .redes-container{
         ul{
